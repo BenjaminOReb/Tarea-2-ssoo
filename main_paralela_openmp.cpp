@@ -38,6 +38,7 @@ void convertirAGrisesOpenMP(Mat& imagenColor, Mat& imagenGris, int numHebras) {
 }
 
 int main(int argc, char* argv[]) {
+// Se asegura de la cantidad de argumentos introducidos y en caso de error entrega una de que argumentos proporcionar
     if (argc != 4) {
         cout << "Uso: " << argv[0] << " <imagen_color> <imagen_gris> <numero_hebras>" << endl;
         return 1;

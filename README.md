@@ -11,7 +11,8 @@ Se implementan tres versiones del programa:
     -Paralela (Threads): Utiliza la clase std::thread para realizar la conversión en paralelo.
     -Paralela (OpenMP): Emplea la API OpenMP para la paralelización del proceso.
 
-REQUISITOS
+REQUISITOS:
+
     -Compilador GNU g++
     -Lirería OpenCV instalada
     -Sistema operativo Linux
@@ -54,6 +55,16 @@ EJEMPLO DE EJECUCION
 	
 	Para el programa paralelo con OpenMP
 		./programa_paralelo_openmp auroras.jpg auroras_grises_opnmp 2		
+
+RSULTADOS Y CONCLUSIONES
+
+Para la version secuencial de un total de 5 pruebas se promedio un tiempo de ejecucion de 1.4639 segundos
+
+Para la version paralela usando threads en un total de 5 intentos con 2 hilos se promedio un tiempo de 0.739239 segundos. En un total de 5 intentos con 10 hilos se promedio un tiempo de 0.671771 segundos
+
+Para la vesion paralela usando la API de OpenMP en un total de 5 intentos con 2 hilos se promedio un tiempo de 0.737333 segundos. En un total de 5 intentos con 10 hilos se promedio un tiempo de 0.6361
+
+Para concluir de los reultados obtenidos sabemos que la version más lenta es la secuencial con un tiempo de conversión de mas del doble que las versiones paralelas, el uso de mas hilos reduce el tiempo de conversión y la version de OpenMP es superior a la version con threads. De lo anterior decir que es de suma importancia la correcta implementacion de la API de OpenMP ya que en el caso contrario estuvo arrojando tiempos de conversion superiores a los 3 segundos, una vez corregido sus tiempos eran menores a los de la version con threads. En mi caso use una imagen de 11.4MB, deberia haber usado una de mucho mayor tamaño ya que las diferencias en los tiempos son mínimas pero de todos modos perceptibles.
 
 ENLACE AL REPOSITORIO DE GIT
 https://github.com/BenjaminOReb/Tarea-2-ssoo

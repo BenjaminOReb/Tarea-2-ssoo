@@ -9,6 +9,7 @@ using namespace std;
 Mat cargarImagen(const string& nombreImagen) {
     Mat imagen = imread(nombreImagen, IMREAD_COLOR);
 
+// Se asegura de la cantidad de argumentos introducidos y en caso de error entrega una de que argumentos proporcionar
     if (imagen.empty()) {
         cerr << "No se pudo cargar la imagen: " << nombreImagen << endl;
         exit(1);
@@ -22,7 +23,7 @@ void convertirAGrisesSecuencial(Mat& imagenColor, Mat& imagenGris) {
     for (int i = 0; i < imagenColor.rows; ++i) {
         for (int j = 0; j < imagenColor.cols; ++j) {
             Vec3b pixel = imagenColor.at<Vec3b>(i, j);
-            uchar gris = pixel[0] * 0.07 + pixel[1] * 0.72 + pixel[2] * 0.21;
+            uchar gris = pixel[0] * 0.07 + pixel[1] * 0.72 + pixel[2] * 0.21; //Formula de conversión a escala de grises
             imagenGris.at<uchar>(i, j) = gris;
         }
     }
