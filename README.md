@@ -54,3 +54,6 @@ EJEMPLO DE EJECUCION
 	
 	Para el programa paralelo con OpenMP
 		./programa_paralelo_openmp auroras.jpg auroras_grises_opnmp 2		
+
+ENLACE AL REPOSITORIO DE GIT
+https://github.com/BenjaminOReb/Tarea-2-ssoo
