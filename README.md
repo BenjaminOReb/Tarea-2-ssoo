@@ -1,5 +1,5 @@
 # Tarea-2-ssoo
-CONVERSIÓN DE IMÁGENES A ESCALA DE GRISES - SECUANCIAL, THREADS Y OPENMP EN C++	
+CONVERSIÓN DE IMÁGENES A ESCALA DE GRISES - SECUENCIAL, THREADS Y OPENMP EN C++	
 
 Autores: Benjamín Ortega, Bruno Castillo.
 
@@ -43,7 +43,7 @@ EJECUCIÓN
 	Para el programa paralelo con OpenMP
 		./programa_paralelo_openmp <imagen_color> <imagen_gris> <numero_hebras>
 	
-	Donde <imagen_color> es el nombre de la imagen que se cambiará a escala de grises (En este caso la imagen incluida en el proyecto se llama auroras.jpg), <imagen_gris> es el nombre con el que se quiere guardar la imagen ya procesada (recomiendo guradarla con nombres diferentes para cada versión y recordar y es importante que lleve la extensión .jpg luego del nombre) y en el caso de las versiones paralelas, añade <numero_hebras> para especificar la cantidad de hilos a utilizar.
+	Donde <imagen_color> es el nombre de la imagen que se cambiará a escala de grises (en este caso la imagen incluida en el proyecto se llama auroras.jpg), <imagen_gris> es el nombre con el que se quiere guardar la imagen ya procesada y en el caso de las versiones paralelas, es necesario añadir <numero_hebras> para especificar la cantidad de hilos a utilizar.
 	
 EJEMPLO DE EJECUCION
 
